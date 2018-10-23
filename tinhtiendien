@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+main(){
+	float somoi,socu,tien,tieuthu;
+	printf("nhap so moi=");
+	scanf("%f",&somoi);
+	printf("nhap so cu=");
+	scanf("%f",&socu);
+	if(somoi>socu){
+	tieuthu=somoi-socu;
+	if(tieuthu<=50){
+	tien=tieuthu*1500;
+	printf("tien dien la %.0f", tien);
+}
+     else if(tieuthu>50&&tieuthu<=100){
+	 tien=50*1500+(tieuthu-50)*2000;
+	printf("tien dien la %.0f", tien);}
+	else{
+		tien=(50*1500)+(50*2000)+(tieuthu-100)*3000;
+		printf("tien dien la %.0f", tien);
+	}	 
+}
+}
